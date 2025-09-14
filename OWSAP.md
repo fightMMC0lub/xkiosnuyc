@@ -1,4 +1,4 @@
-# 🛡️ OWASP Top 10 (2021) — Visual Cheat Sheet
+# 🛡️ OWASP Top 10 (2021) Visual Cheat Sheet
 
 | # | OWASP Item | 📝 Simple Definition | 💥 Example Attacks |
 |--|-------------|-----------------------|----------------------------|
