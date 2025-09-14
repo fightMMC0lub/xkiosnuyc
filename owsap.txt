@@ -1,0 +1,108 @@
+OWASP:Open Web Application Security Project
+OWASP TOP 10: (WEB APPLICAtion or MOBILE Application)
+WEB APPLICAtion:
+1-Broken Access Control
+==>Users can do things or see things they are not allowed to.
+==>EX.A normal user changes their role to “admin” just by editing a web request
+Attacks include:
+	IDOR (Insecure Direct Object Reference)
+	Force browsing (accessing hidden pages)
+	Privilege escalation (normal user becomes admin)
+	Bypass authorization checks
+	Parameter tampering (changing IDs or roles in requests)
+	Horizontal / Vertical access bypass
+
+2-Cryptographyic Failures
+==>The app doesn’t protect sensitive data well (bad or no encryption).
+==>EX.Sending passwords without HTTPS so anyone can see them on the network.
+Attacks include:
+	Data sniffing (reading data over HTTP)
+	Man-in-the-Middle (stealing data in transit)
+	Using weak or outdated algorithms (like MD5, SHA1, DES)
+	Broken or missing HTTPS / TLS
+	Hardcoded encryption keys
+	No encryption for sensitive data (passwords, credit cards, etc.)
+
+3-Injection
+==>The app runs attacker’s code by mistake.
+==>EX.An attacker types SQL code into a login form to delete the users table.
+Attacks include:
+	SQL injection
+	Command injection (OS command injection)
+	LDAP injection
+	XPath injection
+	HTML injection
+	Cross-site scripting (XSS)
+
+4-Insecure Design
+==>The app is not planned or designed with security in mind
+==>EX.The app has no access checks built in at all.
+Attacks include:
+	No security controls at all
+	No rate limiting (allows brute force)
+	No access rules planned
+	No threat modeling done
+	Logic flaws (buy product without paying, etc.)
+
+5-Security Misconfiguration
+==>The app or server has wrong or unsafe settings.
+==>EX.Leaving default admin passwords or debug pages open to everyone.
+Attacks include:
+	Using default admin/admin credentials
+	Exposed debug or test pages
+	Directory listing enabled
+	Leaked error messages with sensitive info
+	Misconfigured CORS (allowing any website to read data)
+	Unnecessary open ports or services
+
+6-Vulnverable and Outdated Components
+==>Using old libraries or tools that have known security problems.
+==>EX.Using an old version of jQuery that has a known bug.
+Attack include:
+    Exploiting known CVEs in old versions of:
+        jQuery: 
+        Apache Struts:
+        OpenSSL:
+        Log4j (Log4Shell attack):
+	Supply chain attacks
+	Library hijacking
+
+7-Identification and Authentification Failures.
+==>Problems with logging in or checking who the user really is.
+==>EX.Allowing unlimited password guesses without blocking the attacker
+Attacks include:
+	Brute force attack
+	Credential stuffing
+	Session hijacking
+	Session fixation
+	Weak password policy abuse
+	Bypassing login (by logic flaw or URL)
+
+8-Software and Data Integrity Failures
+==>Trusting updates or data without checking if they are safe and real.
+==>EX.Installing a software update without verifying its digital signature.
+Attacks include:
+	Tampered software updates (without signature check)
+	Insecure deserialization
+	Compromised CI/CD pipelines
+	Malicious packages from public repositories
+
+9-Security Logging and Monitoring Failures
+==>The app does not keep records or alerts when something goes wrong.
+==>EX.The system doesn’t record failed login attempts or suspicious actions.
+Attacks include:
+	Undetected brute force
+	Undetected privilege escalation
+	Undetected data theft
+	No alerts during attack
+
+10-Server-Side Request Forgery
+==>The attacker makes the server send requests to other places it should not.
+==>EX.The attacker tricks the server to load http://localhost/admin and send back secret data.
+Attacks include:
+	Accessing internal admin panels from server
+	Reading cloud metadata (like AWS instance data)
+	Port scanning internal network through the server
+	Pivoting attacks through the server
+
+
