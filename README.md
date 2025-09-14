@@ -1,2 +1,3 @@
 # Lmlaw998ii....
-[View OWASP Cheat Sheet](https://github.com/fightMMC0lub/xkiosnuyc/blob/main/OWSAP.md)
+[OWASP Cheat Sheet .md](https://github.com/fightMMC0lub/xkiosnuyc/blob/main/OWSAP.md)
+[OWASP .txt](https://github.com/fightMMC0lub/xkiosnuyc/blob/main/owsap.txt)
